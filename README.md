@@ -30,3 +30,10 @@ pnpm dev
 
 ## 许可证
 MIT
+
+
+## 参考
+
+1. [rspack 集成 `@tanstack/react-router` ](https://tanstack.com/router/v1/docs/framework/react/guide/file-based-routing/#configuration-with-rspackrsbuild)
+
+
