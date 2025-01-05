@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { Layout } from "@/components/layout";
+import { Toaster } from "@/components/ui/toaster";
 
 export const Route = createRootRoute({
 	component: RootComponent,
@@ -9,28 +11,16 @@ export const Route = createRootRoute({
 function RootComponent() {
 	return (
 		<>
-			<div className="p-2 flex gap-2 text-lg">
-				<Link
-					to="/"
-					activeProps={{
-						className: "font-bold",
-					}}
-					activeOptions={{ exact: true }}
-				>
-					Home
-				</Link>{" "}
-				<Link
-					to="/about"
-					activeProps={{
-						className: "font-bold",
-					}}
-				>
-					About
-				</Link>
-			</div>
-			<hr />
-			<Outlet />
-			<TanStackRouterDevtools position="bottom-right" />
+			<Layout>
+				<Outlet />
+			</Layout>
+			<TanStackRouterDevtools
+				toggleButtonProps={{
+					className: "TanStackRouterDevtools",
+				}}
+				position="bottom-right"
+			/>
+			<Toaster />
 		</>
 	);
 }

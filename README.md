@@ -34,6 +34,6 @@ MIT
 
 ## 参考
 
-1. [rspack 集成 `@tanstack/react-router` ](https://tanstack.com/router/v1/docs/framework/react/guide/file-based-routing/#configuration-with-rspackrsbuild)
+1. [`rspack` 集成 `@tanstack/react-router` ](https://tanstack.com/router/v1/docs/framework/react/guide/file-based-routing/#configuration-with-rspackrsbuild)
 
-
+2. [`rspack` 集成代码示例](https://github.com/TanStack/router/blob/main/examples/react/quickstart-rspack-file-based/src/app.tsx)

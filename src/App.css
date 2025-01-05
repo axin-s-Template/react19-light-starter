@@ -57,3 +57,8 @@
 		@apply font-sans antialiased bg-background text-foreground;
 	}
 }
+
+.TanStackRouterDevtools button {
+  /* 在这里添加你想要的样式 */
+  bottom: 100px; /* 例如，设置 bottom 为 500px */
+}
